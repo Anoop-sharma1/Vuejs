@@ -1,14 +1,16 @@
 <template>
-<h1>{{title}}</h1>
-
-<Child v-on:changeTitle="updateTitle($event)"/>
+<h1>Form With Radio Button and Checkbox</h1>
+<!-- <h1>{{title}}</h1> -->
+<!-- <Child v-on:changeTitle="updateTitle($event)"/> -->
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <!-- <Home data='Anoop Sharma' msg='hiii'/> -->
   <!-- <ClassBinding/> -->
   <!-- <DataBinding/> -->
   <!-- <Props v-bind:name='users'/> -->
+  <Form />
 </template>
+
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
@@ -16,7 +18,8 @@
 // import ClassBinding from './components/ClassBinding'
 // import DataBinding from './components/DataBinding'
 // import Props from './components/Props'
-import Child from './components/Child'
+// import Child from './components/Child'
+import Form from './components/Form'
 
 export default {
   name: 'App',
@@ -26,7 +29,8 @@ export default {
     // ClassBinding
     // DataBinding
     // Props
-    Child
+    // Child
+    Form
   },
   data() {
     return {
@@ -37,15 +41,15 @@ export default {
       //   {name:"Yad"},
       // ]
       
-      title : "props parent"
+      // title : "props parent"
     }
     
   },
-  methods:{
-      updateTitle(title) {
-        this.title=title
-      }
-    }
+  // methods:{
+  //     updateTitle(title) {
+  //       this.title=title
+  //     }
+  //   }
 };
 </script>
 

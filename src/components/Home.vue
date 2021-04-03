@@ -1,9 +1,10 @@
 <template>
 <div>
-    <h1>Home Component</h1>
-    <users/>
-    <products/>
+    <!-- <h1>Home Component</h1> -->
+    <!-- <users/> -->
+    <!-- <products/> -->
     <!-- <h1 v-if="show">For Loop in Vue Js </h1> -->
+    <!-- <Template/> -->
     <!-- <table>
         <tr>
             <td>Id</td>
@@ -25,8 +26,10 @@
 </template>
 
 <script>
-import Users from './Users'
-import Products from './Products'
+// import Template from './Template'
+// import Users from './Users'
+// import Products from './Products'
+
 export default {
 name : 'Home',
 props : {
@@ -34,8 +37,9 @@ props : {
     msg : String
   },
   components:{
-      Users,
-      Products
+    //   Users,
+    //   Products,
+    //   Template
   },
 data() {
     return {
@@ -52,8 +56,10 @@ data() {
 </script>
 
 <style scoped>
-    div{
+    /* div{
         background-color:rgb(216, 133, 25);
         height: 500px;
-    }
+    } */
+
+   
 </style>

@@ -1,6 +1,12 @@
 <template>
-<div>
-  <h1>Beforecreated and created life cycle hooks</h1>
+<div id="app">
+  <h1>Api Calling</h1>
+  <!-- <div v-if="display">
+      <h1>Beforedestroy and destroyed life cycle hooks</h1>
+  </div> -->
+  <!-- <h1>Beforecreated and created life cycle hooks</h1> -->
+  <!-- <h1>Beforemount and mounted life cycle hooks</h1> -->
+  <!-- <button v-on:click="toggle()">Toggle</button> -->
 </div>
 <!-- <h1>Form With Radio Button and Checkbox</h1> -->
 <!-- <h1>{{title}}</h1> -->
@@ -15,7 +21,10 @@
   <!-- <Login/> -->
   <!-- <Formvalidation/> -->
   <!-- <Filter/> -->
-  <LifeCycle />
+  <!-- <LifeCycle /> -->
+  <!-- <Mounted/> -->
+  <!-- <Destroy /> -->
+  <EmployeeList/>
 </template>
 
 
@@ -30,7 +39,10 @@
 // import Login from './components/Login'
 // import Formvalidation from './components/Formvalidation'
 // import Filter from './components/Filter'
-import LifeCycle from './components/LifeCycle'
+// import LifeCycle from './components/LifeCycle'
+// import Mounted from './components/Mounted'
+// import Destroy from './components/Destroy'
+import EmployeeList from './components/EmployeeList'
 
 export default {
   name: 'App',
@@ -45,10 +57,14 @@ export default {
     // Login
     // Formvalidation
     // Filter
-    LifeCycle
+    // LifeCycle
+    // Mounted
+    // Destroy
+    EmployeeList
   },
   data() {
     return {
+      display : true
       // name:'Anoop Sharma'
       // users:[
       //   {name:"Yadav"},
@@ -61,11 +77,14 @@ export default {
     }
     
   },
-  // methods:{
-  //     updateTitle(title) {
-  //       this.title=title
-  //     }
-  //   }
+  methods:{
+    // toggle() {
+    //   this.display= !this.display 
+    // }
+      // updateTitle(title) {
+      //   this.title=title
+      // }
+    }
 };
 </script>
 

@@ -1,6 +1,8 @@
 <template>
 <div>
-    <h1 style="    background: yellow;">Home Component</h1>
+    <h1>Home Component</h1>
+    <users/>
+    <products/>
     <!-- <h1 v-if="show">For Loop in Vue Js </h1> -->
     <!-- <table>
         <tr>
@@ -22,13 +24,18 @@
     
 </template>
 
-
 <script>
+import Users from './Users'
+import Products from './Products'
 export default {
 name : 'Home',
 props : {
     data : String,
     msg : String
+  },
+  components:{
+      Users,
+      Products
   },
 data() {
     return {
@@ -43,3 +50,10 @@ data() {
 
 };
 </script>
+
+<style scoped>
+    div{
+        background-color:rgb(216, 133, 25);
+        height: 500px;
+    }
+</style>

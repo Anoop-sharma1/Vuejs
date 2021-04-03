@@ -1,5 +1,8 @@
 <template>
-<h1>Form With Radio Button and Checkbox</h1>
+<div>
+  <h1>Beforecreated and created life cycle hooks</h1>
+</div>
+<!-- <h1>Form With Radio Button and Checkbox</h1> -->
 <!-- <h1>{{title}}</h1> -->
 <!-- <Child v-on:changeTitle="updateTitle($event)"/> -->
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
@@ -8,7 +11,11 @@
   <!-- <ClassBinding/> -->
   <!-- <DataBinding/> -->
   <!-- <Props v-bind:name='users'/> -->
-  <Form />
+  <!-- <Form /> -->
+  <!-- <Login/> -->
+  <!-- <Formvalidation/> -->
+  <!-- <Filter/> -->
+  <LifeCycle />
 </template>
 
 
@@ -19,7 +26,11 @@
 // import DataBinding from './components/DataBinding'
 // import Props from './components/Props'
 // import Child from './components/Child'
-import Form from './components/Form'
+// import Form from './components/Form'
+// import Login from './components/Login'
+// import Formvalidation from './components/Formvalidation'
+// import Filter from './components/Filter'
+import LifeCycle from './components/LifeCycle'
 
 export default {
   name: 'App',
@@ -30,10 +41,15 @@ export default {
     // DataBinding
     // Props
     // Child
-    Form
+    // Form
+    // Login
+    // Formvalidation
+    // Filter
+    LifeCycle
   },
   data() {
     return {
+      // name:'Anoop Sharma'
       // users:[
       //   {name:"Yadav"},
       //   {name:"Yada"},
